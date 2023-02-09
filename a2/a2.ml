@@ -90,7 +90,7 @@ module FuncSet : FSET = struct
         match list with 
         | [] -> acc
         | h::t -> fold_left fn (fn acc h) t 
-      in fold_left fn set.list_ 
+      in fold_left fn set.list_ []
       
 
 
